@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  MySQL 5.0                                     */
-/* Date de création :  1/4/2021 10:51:46 AM                     */
+/* Date de crï¿½ation :  1/4/2021 5:33:09 PM                      */
 /*==============================================================*/
 
 
@@ -13,7 +13,7 @@ drop table if exists product;
 /*==============================================================*/
 create table category
 (
-   id_category          int not null,
+   id_category          bigint not null,
    name                 varchar(254),
    primary key (id_category)
 );
@@ -23,8 +23,8 @@ create table category
 /*==============================================================*/
 create table product
 (
-   id_product           int not null,
-   id_category          int,
+   id_product           bigint not null,
+   id_category          bigint,
    name                 varchar(254),
    price                float,
    primary key (id_product)
