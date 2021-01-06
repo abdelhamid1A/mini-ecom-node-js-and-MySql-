@@ -1,0 +1,13 @@
+body{
+    background-color: #2C2E36;
+}
+.btn-hover{
+    min-width: 230px;
+    margin: 1em;
+    padding: 0.3em;
+    background: linear-gradient(to right,#56CCF2,#2F80ED);
+    border: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+}

@@ -1,0 +1,14 @@
+{{#each category}}
+    
+
+    <form action="/updatecategory" method="post">
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label text-white">name</label>
+            <input name="name" value="{{this.name}}" type="text" class="form-control" id="exampleFormControlInput1" placeholder="product name">
+            <input type="hidden" name="id_category" value="{{this.id_category}}">
+        </div>
+
+        
+        <button type="submit" class="btn btn-primary">add Category</button>
+    </form>
+{{/each}}

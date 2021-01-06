@@ -31,7 +31,7 @@ getAll = (req,res)=>{
 }
     
 updateProduct = (req,res)=>{
-    var sql = "SELECT product.id_product ,product.name AS productName, product.price , category.name FROM product INNER JOIN category ON product.id_category=category.id_category WHERE id_product = ? ; SELECT * FROM category; ";
+    var sql = "SELECT product.id_product ,product.name AS productName, product.price ,product.id_category, category.name FROM product INNER JOIN category ON product.id_category=category.id_category WHERE id_product = ? ; SELECT * FROM category; ";
     connection.query(sql,[req.params.id],(err,data)=>{
         if(err) throw err
         console.log('------------------------------------')

@@ -1,12 +1,12 @@
 
-<form action="addproduct" method="post">
+<form action="addproduct" method="post" class="mt-5">
     <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">name</label>
+    <label for="exampleFormControlInput1" class="form-label text-white">name</label>
         <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="product name">
     </div>
 
     <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">category</label>
+    <label for="exampleFormControlInput1" class="form-label text-white">category</label>
         <select class="form-select" aria-label="Default select example" name="category">
             {{#each category}}
                 <option value="{{this.id_category}}">{{this.name}}</option>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">price</label>
+    <label for="exampleFormControlInput1" class="form-label text-white">price</label>
         <input name="price" type="number" class="form-control" id="exampleFormControlInput1" placeholder="product price">
     </div>
     <button type="submit" class="btn btn-primary">add product</button>
